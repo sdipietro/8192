@@ -1,0 +1,28 @@
+
+#main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.tile {
+    width: 135px;
+    height: 135px;
+    border-radius: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+}

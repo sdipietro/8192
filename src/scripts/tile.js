@@ -1,15 +1,15 @@
 import Util from './util';
 
 const COLORMAP = {
-    2: 'blue',
-    4: 'red',
-    8: 'pink',
-    16: 'orange',
-    32: 'yellow',
-    64: 'green',
-    128: 'purple',
-    256: 'aquamarine',
-    512: 'chocolate',
+    2: '#deeaee',
+    4: '#b1cbbb',
+    8: '#eea29a',
+    16: '#c94c4c',
+    32: '#92a8d1',
+    64: '#034f84',
+    128: '#f7786b',
+    256: '#ffef96',
+    512: '#50394c',
     1024: 'coral',
     2048: 'crimson',
     4096: 'darkorange',
@@ -40,9 +40,15 @@ class Tile {
     }
 
     reset() {
-        debugger;
         this.val = 0;
         this.empty = true;
+        this.updateColor();
+        Util.renderTile(this);
+    }
+
+    copy(tile) {
+        this.val = tile.val;
+        tile.empty ? this.empty = true : this.empty = false;
         this.updateColor();
         Util.renderTile(this);
     }

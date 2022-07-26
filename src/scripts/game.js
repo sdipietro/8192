@@ -28,7 +28,7 @@ class Game {
         randomTiles.forEach(tile => {
             while (count < n && tile.empty) {
                 count++;
-                let randomNum = [2,4].sort(() => Math.random() - Math.random())[0];
+                let randomNum = [2,2,2,2,2,2,2,2,2,4].sort(() => Math.random() - Math.random())[0];
                 tile.val = randomNum;
                 tile.empty = false;
                 tile.updateColor();
@@ -66,7 +66,7 @@ class Game {
        } else if (e.code === 'ArrowUp') {
             this.compressUp();
        }
-       window.setTimeout(() => {this.placeRandomPiece(1)}, 100);
+       window.setTimeout(() => {this.placeRandomPiece(1)}, 200);
     }
 
      makeMove(tile, dir) {
@@ -190,6 +190,7 @@ class Game {
     }
 
     moveToTop(tile) {
+        // debugger
         const abovePos = [tile.pos[0] - 1, tile.pos[1]];
         if (!Util.validPos(abovePos)) {
             return;

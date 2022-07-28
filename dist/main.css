@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 50px;
 }
 
 .board {
@@ -15,24 +14,50 @@
   height: 600px;
   background-color: gray;
   justify-content: space-around;
-  border-radius: 10px;
-  padding-top: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.size16 {
+  padding: 2.5px;
+}
+
+.size8 {
+  padding: 5px;
+}
+
+.size4 {
+  padding: 10px;
 }
 
 .tile {
   display: flex;
-  width: 135px;
-  height: 135px;
-  border-radius: 10px;
   background-color: lightgray;
   cursor: pointer;
-  font-size: 40px;
   align-items: center;
   justify-content: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+}
+
+.size16 > .tile {
+  width: 36px;
+  height: 36px;
+  font-size: 10px;
+}
+
+.size8 > .tile {
+  border-radius: 100px;
+  width: 67.5px;
+  height: 67.5px;
+  font-size: 20px;
+}
+
+.size4 > .tile {
+  border-radius: 100px;
+  width: 135px;
+  height: 135px;
+  font-size: 40px;
 }
 
 html,

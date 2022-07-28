@@ -1,7 +1,5 @@
-import Game from './scripts/game';
-
+import GameView from './scripts/game-view';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const main = document.getElementById('main');
-    window.game = new Game(main);
+    new GameView(4);
 })

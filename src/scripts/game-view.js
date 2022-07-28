@@ -32,6 +32,7 @@ class GameView {
                 board.append(tile);
             }
             this.game.board.push(tileRow);
+            Util.renderScore(this.game.score);
         }
 
         main.append(board);
@@ -47,8 +48,7 @@ class GameView {
             this.game.board = [];
             this.game.changeMadeToBoard = false;
             this.game.score = 0;
-            
-            Util.renderScore(this.game.score);
+
             this.setupBoard(this.game.size);
         });
     }

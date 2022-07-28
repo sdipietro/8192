@@ -1,8 +1,69 @@
 
+#app-container {
+    background-color: aquamarine;
+    padding-bottom: 50px;
+}
+
 #main {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#title {
+    margin-right: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-size: 50px;
+}
+
+#header-right {
+    justify-content: center;
+    align-items: center;
+}
+
+#score-box {
+    height: 35px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: gray;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#score {
+    color: white;
+}
+
+#new-game-button {
+    background-color: lightcoral;
+    cursor: pointer;
+    width: 90px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+
+#middle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .board {
@@ -10,22 +71,26 @@
     flex-wrap: wrap;
     width: 600px;
     height: 600px;
+    min-width: 600px;
+    min-height: 600px;
     background-color: gray;
     justify-content: space-around;
     align-items: center;
-    border-radius: 100px;
 }
 
 .size16 {
-    padding: 2.5px
+    padding: 2.5px;
+    border-radius: 25px;
 }
 
 .size8 {
     padding: 5px;
+    border-radius: 50px;
 }
 
 .size4 {
     padding: 10px;
+    border-radius: 100px;
 }
 
 .tile {
@@ -39,6 +104,7 @@
 }
 
 .size16>.tile {
+    border-radius: 100px;
     width: 36px;
     height: 36px;
     font-size: 10px;
@@ -46,8 +112,8 @@
 
 .size8 > .tile {
     border-radius: 100px;
-    width: 67.5px;
-    height: 67.5px;
+    width: 65px;
+    height: 65px;
     font-size: 20px;
 }
 

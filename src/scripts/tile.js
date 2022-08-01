@@ -1,8 +1,8 @@
 import Util from './util';
 
 const COLORMAP = {
-    2: '#deeaee',
-    4: '#b1cbbb',
+    2: '#00FFFF',
+    4: '#FF8000',
     8: '#eea29a',
     16: '#c94c4c',
     32: '#92a8d1',
